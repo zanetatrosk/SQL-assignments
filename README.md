@@ -24,7 +24,7 @@
       * vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit
       * vyučují může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**
       * vy to uvidíte, můžete na připomínky reagovat (přímo v gitlabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře
-      * když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřit (**resolve**)a posléze celý merge přijmout (**accept**) a udělit vám příslušné body
+      * když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřit (**resolve**), merge uzavřít [^1] (**close**) a udělit vám příslušné body
 
 ## Co potřebuji instalovat a konfigurovat?
   * Nástroj GIT pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku.
@@ -78,3 +78,5 @@ git push -u origin ukol-01   # pouzijte spravne jmeno vetve`
    * http://gitready.com - Hlubší informace o Gitu, informace o funkcionalitách nových verzí
    * http://firstaidgit.io - Rychlá odpověď na otázky týkající se Gitu, agregace ze Stack Overflow a dalších zdrojů
  * Ten výše uvedený "hravý tutoriál pro práci s větvemi" je opravdu super. Doporučuji.
+
+[^1]: Merge requesty není nutné mergovat do hlavní větve. Naopak to není doporučováno, neb tím mohou vznikat zbytečné komplikace s konflikty.
