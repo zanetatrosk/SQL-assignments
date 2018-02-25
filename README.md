@@ -2,7 +2,7 @@
 
 ## Disclaimer
   * Způsob odevzdávání (nepovinných) domácích úkolů a semestrálek je inspirován postupem, který již některé programátorsky orientované předměty na FIT používají.
-  * Konkrétně vycházíme z návodu  pro předmět MI-RUB: https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc
+  * Konkrétně vycházíme z [návodu pro předmět MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc)
   * Vše je založeno na technologiích [Git](https://git-scm.com/) a [GitLab](https://about.gitlab.com/)
   * Pokud je neznáte, není potřeba propadat panice, podle níže uvedeného návodu to snadno zvládnete.
 
