@@ -16,7 +16,7 @@
 ### Jak
   * Úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
   * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta; tento projekt bude dále označován **origin**.
-  * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci "Proč", spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
+  * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
     * Na začátku semestru do svého projektu (origin) nahrajete prázdný obsah, nicméně to bude první větev (branch), které se tradičně říká **master**.
     * Z projektu s domácími úkoly (upstream) si do **lokální** verze svého projektu (origin) s řešeními stáhnete zadání a provedete operaci **merge**, tím se zajistí propagace i později zveřejněných případně opravených zadání.
     * Pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN` je číslo úkolu (například `ukol-01`), do té se přepnete pomocí **checkout** a úkol vyřešíte.
@@ -33,7 +33,7 @@
   * Existují různé grafické nadstavby pro práci s Gitem (např. [GitHub Desktop](https://desktop.github.com/)), některé jsou i součástí různých vývojářských prostředí (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
 
 ## Příkazy pro realizaci
-Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci "Jak". Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
+Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci „Jak“. Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
 
 ### Začátek semestru - inicializace projektu
 
@@ -98,6 +98,6 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
    * http://pcottle.github.io/learnGitBranching - Zajímavý hravý tutoriál pro práci s větvemi.
    * http://gitready.com - Hlubší informace o Gitu, informace o funkcionalitách nových verzí.
    * http://firstaidgit.io - Rychlá odpověď na otázky týkající se Gitu, agregace ze Stack Overflow a dalších zdrojů.
- * Ten výše uvedený "hravý tutoriál pro práci s větvemi" je opravdu super. Doporučuji.
+ * Ten výše uvedený „hravý tutoriál pro práci s větvemi“ je opravdu super. Doporučuji.
 
 [^1]: Merge requesty není nutné mergovat do hlavní větve. Naopak to není doporučováno, neb tím mohou vznikat zbytečné komplikace s konflikty.
