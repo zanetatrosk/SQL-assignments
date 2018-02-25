@@ -1,19 +1,23 @@
 # BI-SQL domácí úkoly a semestrální práce
 
 ## Disclaimer
+
   * Způsob odevzdávání (nepovinných) domácích úkolů a semestrálek je inspirován postupem, který již některé programátorsky orientované předměty na FIT používají.
   * Konkrétně vycházíme z [návodu pro předmět MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc)
   * Vše je založeno na technologiích [Git](https://git-scm.com/) a [GitLab](https://about.gitlab.com/)
   * Pokud je neznáte, není potřeba propadat panice, podle níže uvedeného návodu to snadno zvládnete.
 
+
 ## Proč a jak - neformální vysvětlení celého procesu
 
 ### Proč
+
   * Potřebujeme dát studentům možnost bezpečně a transparentně odevzdat jednotlivé úkoly (včetně informace o tom, kdy byl úkol odevzdán).
   * Vyučující potřebuje studentovi dát efektivní zpětnou vazbu k odevzdané práci: co je dobře, kde je problém, co je třeba doplnit; případně nad tím iterovat bez přílišné agendy a ztráty kontextu.
   * GitLab je nástroj, který mimo jiné, poskytuje prostředky pro takovou **revizi kódu** (**code revision**).
 
 ### Jak
+
   * Úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
   * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta; tento projekt bude dále označován **origin**.
   * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
@@ -26,13 +30,17 @@
       * Vy to uvidíte, můžete na připomínky reagovat (přímo v GitLabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře.
       * Když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřít (**resolve**), merge uzavřít [^1] (**close**) a udělit vám příslušné body.
 
+
 ## Co potřebuji instalovat a konfigurovat?
+
   * Nástroj Git pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku (pokud používáte Windows, může se vám hodit návod [How to use terminal on Windows without going crazy…](https://gist.github.com/jirutka/99d57c82fa8981f56fb5)).
   * ČVUT username a heslo pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
   * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na GitLab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dostupná pro všechny platformy.
   * Existují různé grafické nadstavby pro práci s Gitem (např. [GitHub Desktop](https://desktop.github.com/)), některé jsou i součástí různých vývojářských prostředí (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
 
+
 ## Příkazy pro realizaci
+
 Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci „Jak“. Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
 
 ### Začátek semestru - inicializace projektu
@@ -91,6 +99,7 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
 
 
 ## Chcete-li vědět něco více o Gitu
+
  * Předmět BI-GIT vyučovaný na FITu https://edux.fit.cvut.cz/courses/BI-GIT/ Pokud na něj máte přístup, najdete tam výborně zpracované slides v češtině.
  * Ze stránek předmětu jsou i následující odkazy:
    * https://git-scm.com/doc - Dokumentace
