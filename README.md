@@ -14,7 +14,7 @@
   * GitLab je nástroj, který mimo jiné, poskytuje prostředky pro takovou **revizi kódu** (**code revision**)
 
 ### Jak
-  * úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz:BI-SQL/homeworks; dále bude označován jako **upstream**
+  * úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**
   * vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta; tento projekt bude dále označován **origin**
   * **podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci "Proč", spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
     * na začátku semestru do svého projektu (origin) nahrajete prázdný obsah, nicméně to bude první větev (branch), které se tradičně říká **master**
