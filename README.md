@@ -21,14 +21,14 @@
     * z projektu s domácímí úkoly (upstream) si do **lokální** verze svého projektu (origin) s řešeními stáhnete zadání a provedete operaci **merge**, tím se zajistí propagace i později zveřejněných případně opravených zadání
     * pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou vhondě nazvete (například "úkol-01"), do té se přepnete pomocí **checkout** a úkol vyřešíte
     * vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v gitlabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte že:
-      * vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat ohodnotit
+      * vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit
       * vyučují může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**
       * vy to uvidíte, můžete na připomínky reagovat (přímo v gitlabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře
       * když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřit (**resolve**)a posléze celý merge přijmout (**accept**) a udělit vám příslušné body
 
-## Co potřebuju instalovat a konfigurovat?
+## Co potřebuji instalovat a konfigurovat?
   * Nástroj GIT pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku.
-  * ČVUT username a login pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
+  * ČVUT username a heslo pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
   * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na gitlab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dosutpná pro všechny platformy. Stačí vám vyrobit si RSA klíč, jeho private část nebude chráněna heslem (heslo bude prázdné).
   * Existují různé grafické nadstavby pro práci s GITem, některé jsou i součástí různých vyvojářských prostředi (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
 
@@ -64,7 +64,7 @@ git merge upstream/origin`
 git add --all
 git commit -m "pouzijte nejaky smyslupny komentar, napr: odevzdani ukol-1, první itrace"
 git push -u origin ukol-01   # pouzijte spravne jmeno vetve`
-5. v GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu
+5. V GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu
 6. V GitLabu sledujte vývoj komentářů, odpovídejte na ně, případně doplňujte kód a propagujte jej na GitLab (krok 4)
 
 
