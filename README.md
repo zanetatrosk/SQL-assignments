@@ -27,7 +27,7 @@
       * když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřit (**resolve**), merge uzavřít [^1] (**close**) a udělit vám příslušné body
 
 ## Co potřebuji instalovat a konfigurovat?
-  * Nástroj GIT pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku.
+  * Nástroj GIT pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku (pokud používáte Windows, může se vám hodit návod [How to use terminal on Windows without going crazy…](https://gist.github.com/jirutka/99d57c82fa8981f56fb5)).
   * ČVUT username a heslo pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
   * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na gitlab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dosutpná pro všechny platformy.
   * Existují různé grafické nadstavby pro práci s GITem, některé jsou i součástí různých vyvojářských prostředi (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
