@@ -40,11 +40,32 @@ Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce
 1. Pokud ještě nemáte SSH public část klíče v GitLabu, nahrajte ji: https://gitlab.fit.cvut.cz/profile/keys
 2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji:`
 git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
-cd MI-RUB/homeworks`
-3. něco dalšího...
+cd BI-SQL/homeworks`
+3. Do svého projektu (origin) si přidejte zadání úkolů (upstream): `
+git remote add upstream git@gitlab.fit.cvut.cz:BI-SQL/homeworks.git
+git fetch upstream`
+4. Proveďte merge zadání a vašeho projektu origin:`
+git merge upstream/master`
+5. Propagujte lokální kopii větve master zpět do GitLabu: `
+git push -u origin master`
 
+Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých úkolech.
 
 ### Jednotlivé úkoly
+
+1. vytvořte si nový branch pro úkol (například) ukol-01 a přepněte se na něj: `
+git branch ukol-01
+git checkout ukol-01`
+2. stáhněte si čerstvé zadání úkolů z upstream:`
+git fetch upstream
+git merge upstream/origin`
+3. úkol vyřešte v lokálním repozitáři
+4. změny promítněte do vzdáleného repozitáře na gitlabu: `
+git add --all
+git commit -m "pouzijte nejaky smyslupny komentar, napr: odevzdani ukol-1, první itrace"
+git push -u origin ukol-01   # pouzijte spravne jmeno vetve`
+5. v GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu
+6. V GitLabu sledujte vývoj komentářů, odpovídejte na ně, případně doplňujte kód a propagujte jej na GitLab (krok 4)
 
 
 
