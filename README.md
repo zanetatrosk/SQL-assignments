@@ -62,6 +62,7 @@ git merge upstream/origin`
 3. úkol vyřešte v lokálním repozitáři
 4. změny promítněte do vzdáleného repozitáře na gitlabu: `
 git add --all
+git status  # zkontrolujte, zda necommitujete něco, co v repositáři být nemá
 git commit -m "pouzijte nejaky smyslupny komentar, napr: odevzdani ukol-1, první itrace"
 git push -u origin ukol-01   # pouzijte spravne jmeno vetve`
 5. V GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu
