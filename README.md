@@ -30,7 +30,7 @@
   * Nástroj GIT pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku (pokud používáte Windows, může se vám hodit návod [How to use terminal on Windows without going crazy…](https://gist.github.com/jirutka/99d57c82fa8981f56fb5)).
   * ČVUT username a heslo pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
   * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na gitlab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dosutpná pro všechny platformy.
-  * Existují různé grafické nadstavby pro práci s GITem, některé jsou i součástí různých vyvojářských prostředi (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
+  * Existují různé grafické nadstavby pro práci s GITem (např. [GitHub Desktop](https://desktop.github.com/)), některé jsou i součástí různých vyvojářských prostředi (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
 
 ## Příkazy pro realizaci
 Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci "Jak". Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
