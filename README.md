@@ -38,8 +38,8 @@ Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce
 ### Začátek semestru - inicialiace projektu
 
 1. Pokud ještě nemáte SSH public část klíče v GitLabu, nahrajte ji: https://gitlab.fit.cvut.cz/profile/keys
-2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji:
-`git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # replace {username} with your username!
+2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji:`
+git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
 cd MI-RUB/homeworks`
 3. něco dalšího...
 
