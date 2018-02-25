@@ -14,11 +14,11 @@
   * GitLab je nástroj, který mimo jiné, poskytuje prostředky pro takovou **revizi kódu** (**code revision**)
 
 ### Jak
-  * úkoly budeme (postupně) zveřejňovat na v projektu https://gitlab.fit.cvut.cz:BI-SQL/homeworks
-  * vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta
+  * úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz:BI-SQL/homeworks; dále bude označován jako **upstream**
+  * vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta; tento projekt bude dále označován **origin**
   * **podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci "Proč", spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
-    * na začátku semestru do svého projektu nahrajete prázdný obsah, nicméně to bude první větev (branch), které se tradičně říká **master**
-    * z projektu s domácímí úkoly (označujeme ho **upstream**) si do **lokální** verze svého projektu s řešeními stáhnete zadání a provedete operaci **merge**, tím se zajistí propagace i později zveřejněných případně opravených zadání
+    * na začátku semestru do svého projektu (origin) nahrajete prázdný obsah, nicméně to bude první větev (branch), které se tradičně říká **master**
+    * z projektu s domácímí úkoly (upstream) si do **lokální** verze svého projektu (origin) s řešeními stáhnete zadání a provedete operaci **merge**, tím se zajistí propagace i později zveřejněných případně opravených zadání
     * pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou vhondě nazvete (například "úkol-01"), do té se přepnete pomocí **checkout** a úkol vyřešíte
     * vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v gitlabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte že:
       * vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat ohodnotit
@@ -31,6 +31,22 @@
   * ČVUT username a login pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
   * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na gitlab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dosutpná pro všechny platformy. Stačí vám vyrobit si RSA klíč, jeho private část nebude chráněna heslem (heslo bude prázdné).
   * Existují různé grafické nadstavby pro práci s GITem, některé jsou i součástí různých vyvojářských prostředi (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
+
+## Příkazy pro realizaci
+Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci "Jak". Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
+
+### Začátek semestru - inicialiace projektu
+
+1. Pokud ještě nemáte SSH public část klíče v GitLabu, nahrajte ji: https://gitlab.fit.cvut.cz/profile/keys
+2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji:
+`git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # replace {username} with your username!
+cd MI-RUB/homeworks`
+3. něco dalšího...
+
+
+### Jednotlivé úkoly
+
+
 
 ## Chcete-li vědět něco více o GITu
  * Předmět BI-GIT vyučovaný na FITu https://edux.fit.cvut.cz/courses/BI-GIT/ Pokud na něj máte přistup, najdete tam výborně zpracované slides v češtině.
