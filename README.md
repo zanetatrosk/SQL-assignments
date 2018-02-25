@@ -20,16 +20,16 @@
     * na začátku semestru do svého projektu (origin) nahrajete prázdný obsah, nicméně to bude první větev (branch), které se tradičně říká **master**
     * z projektu s domácími úkoly (upstream) si do **lokální** verze svého projektu (origin) s řešeními stáhnete zadání a provedete operaci **merge**, tím se zajistí propagace i později zveřejněných případně opravených zadání
     * pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN` je číslo úkolu (například `ukol-01`), do té se přepnete pomocí **checkout** a úkol vyřešíte
-    * vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v gitlabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte že:
+    * vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v GitLabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte že:
       * vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit
       * vyučují může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**
-      * vy to uvidíte, můžete na připomínky reagovat (přímo v gitlabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře
+      * vy to uvidíte, můžete na připomínky reagovat (přímo v GitLabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře
       * když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřít (**resolve**), merge uzavřít [^1] (**close**) a udělit vám příslušné body
 
 ## Co potřebuji instalovat a konfigurovat?
   * Nástroj Git pro vaši platformu. Existuje pro všechny platformy a ovládá se pomocí příkazového řádku (pokud používáte Windows, může se vám hodit návod [How to use terminal on Windows without going crazy…](https://gist.github.com/jirutka/99d57c82fa8981f56fb5)).
   * ČVUT username a heslo pro přístup na https://gitlab.fit.cvut.cz odkud budete čerpat zadání a kam budete odevzdávat úlohy a semestrálku.
-  * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na gitlab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dostupná pro všechny platformy.
+  * SSH klíč, jehož private část budete mít u sebe a public část nahrajete na GitLab do svého profilu. Pro výrobu klíče lze použít open-source utilitu ssh-keygen, která je dostupná pro všechny platformy.
   * Existují různé grafické nadstavby pro práci s Gitem (např. [GitHub Desktop](https://desktop.github.com/)), některé jsou i součástí různých vývojářských prostředí (IDE). Praktiky nic z toho nepotřebujete, ale můžete s nimi experimentovat. Zkušenosti a doporučení můžeme na těchto stránkách později sdílet.
 
 ## Příkazy pro realizaci
@@ -60,7 +60,7 @@ git checkout ukol-01`
 git fetch upstream
 git merge upstream/origin`
 3. úkol vyřešte v lokálním repozitáři
-4. změny promítněte do vzdáleného repozitáře na gitlabu: `
+4. změny promítněte do vzdáleného repozitáře na GitLabu: `
 git add --all
 git status  # zkontrolujte, zda necommitujete něco, co v repositáři být nemá
 git commit -m "ukol-1: První iterace"  # napište smyslupný komentář v podobném stylu
