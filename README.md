@@ -3,7 +3,7 @@
 ## Disclaimer
 
   * Způsob odevzdávání (nepovinných) domácích úkolů a semestrálek je inspirován postupem, který již některé programátorsky orientované předměty na FIT používají.
-  * Konkrétně vycházíme z [návodu pro předmět MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc)
+  * Konkrétně vycházíme z [návodu pro předmět MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/exercises/blob/master/README.adoc)
   * Vše je založeno na technologiích [Git](https://git-scm.com/) a [GitLab](https://about.gitlab.com/)
   * Pokud je neznáte, není potřeba propadat panice, podle níže uvedeného návodu to snadno zvládnete.
 
@@ -41,7 +41,7 @@
 
 ## Příkazy pro realizaci
 
-Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/mi-rub-hw/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci „Jak“. Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
+Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/exercises/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci „Jak“. Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
 
 ### Začátek semestru - inicializace projektu
 
