@@ -58,23 +58,29 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
 ### Jednotlivé úkoly
 
 1. Nejprve si aktualizujte zadání (pokud došlo k nějakým změnám)
+
    ```sh
    git checkout master
    git pull
    ```
+
 2. Vytvořte si nový branch pro úkol (například) ukol-01 a přepněte se na něj:
+
     ```sh
     git branch ukol-01
     git checkout ukol-01
     ```
+
 3. Nezapomeňte se přepdnout do správného adresáře `ukol-NN` resp. `semestralni-prace` a úkol vyřešte.
 4. Změny promítněte do vzdáleného repozitáře na GitLabu:
+
     ```sh
     git add --all
     git status  # zkontrolujte, zda necommitujete něco, co v repositáři být nemá
     git commit -m "ukol-1: První iterace"  # napište smyslupný komentář v podobném stylu
     git push -u origin ukol-01   # pouzijte spravne jmeno vetve
     ```
+
 5. V GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu.
 6. V GitLabu sledujte vývoj komentářů, odpovídejte na ně, případně doplňujte kód a propagujte jej na GitLab (krok 4).
 
