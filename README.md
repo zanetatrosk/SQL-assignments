@@ -71,7 +71,7 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
     git branch ukol-01
     git checkout ukol-01
     ```
-3. Úkol vyřešte v lokálním repozitáři.
+3. Nezapomeňte se přepdnout do správného adresáře `ukol-NN` resp. `semestralni-prace` a úkol vyřešte.
 4. Změny promítněte do vzdáleného repozitáře na GitLabu:
 
     ```sh
