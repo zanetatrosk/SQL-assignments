@@ -1,6 +1,6 @@
 # BI-SQL domácí úkoly a semestrální práce
 
-## Ǔkol 01
+## Úkol 01
 
   * věcné požadavky a ukázky najdete na eduxu (https://edux.fit.cvut.cz/courses/BI-SQL/start#priklad_1_az_6_bodu)
   * úlohu vyřešte přímo v tomto adresáři a vysledek odevzdejte do gitlabu standardním způsobem
