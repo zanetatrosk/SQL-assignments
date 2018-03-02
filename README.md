@@ -21,9 +21,9 @@
   * Úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
   * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta; tento projekt bude dále označován **origin**.
   * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
-    * Na začátku semestru do svého projektu (origin) nahrajete prázdný obsah, nicméně to bude první větev (branch), které se tradičně říká **master**.
-    * Z projektu s domácími úkoly (upstream) si do **lokální** verze svého projektu (origin) s řešeními stáhnete zadání a provedete operaci **merge**, tím se zajistí propagace i později zveřejněných případně opravených zadání.
-    * Pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN` je číslo úkolu (například `ukol-01`), do té se přepnete pomocí **checkout** a úkol vyřešíte.
+    * Na začátku semestru máte ve svém projektu (origin) první větev (branch), které se tradičně říká **master**. Tuto větev nemůžete upravovat, je zamčená. V ní je čerstvá kopie projektu homeworks (upstream). Její obsah se automaticky aktualizuje, když změníme nebo přidáme nějaké zadání.
+    * Naklonujete si (příkaz git clone) tento projekt na svůj lokální počítač a tím máte inicializované prostředí s čertvými variantami zadání.
+    * Pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`) respektive `semestralni-prace`, do té se přepnete pomocí **checkout** a úkol vyřešíte.
     * Vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v GitLabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte, že:
       * Vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit.
       * Vyučují může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**.
@@ -52,38 +52,24 @@ Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce
     git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
     cd BI-SQL/homeworks
     ```
-3. Do svého projektu (origin) si přidejte zadání úkolů (upstream):
-
-    ```sh
-    git remote add upstream git@gitlab.fit.cvut.cz:BI-SQL/homeworks.git
-    git fetch upstream
-    ```
-4. Proveďte merge zadání a vašeho projektu origin:
-
-    ```sh
-    git merge upstream/master`
-    ```
-5. Propagujte lokální kopii větve master zpět do GitLabu:
-
-    ```sh
-    git push -u origin master
-    ```
 
 Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých úkolech.
 
 ### Jednotlivé úkoly
 
-1. Vytvořte si nový branch pro úkol (například) ukol-01 a přepněte se na něj:
+1. Nejprve si aktualizujte zadání (pokud došlo k nějakým změnám)
+
+   ```sh
+   git checkout master
+   git pull
+   ```
+
+
+2. Vytvořte si nový branch pro úkol (například) ukol-01 a přepněte se na něj:
 
     ```sh
     git branch ukol-01
     git checkout ukol-01
-    ```
-2. Stáhněte si čerstvé zadání úkolů z upstream:
-
-    ```sh
-    git fetch upstream
-    git merge upstream/origin
     ```
 3. Úkol vyřešte v lokálním repozitáři.
 4. Změny promítněte do vzdáleného repozitáře na GitLabu:
