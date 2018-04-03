@@ -31,7 +31,7 @@ Nyní máte prostředí připravené a dále můžete pracovat na testu
     git checkout test-01
     ```
 
-3. Nezapomeňte se přepdnout do správného adresáře  test vyřešte:
+3. Nezapomeňte se přepdnout do správného adresáře test-01, pokud se nevytvořil, tak ho vytvořte (`mkdir test-01`) a  test v něm vyřešte:
 
    ```sh
    cd test-01
@@ -43,7 +43,7 @@ Nyní máte prostředí připravené a dále můžete pracovat na testu
     git add --all
     git status  # zkontrolujte, zda necommitujete něco, co v repositáři být nemá
     git commit -m "test-01 - odevzdání "
-    git push -u origin testl-1   # pouzijte spravne jmeno vetve
+    git push -u origin testl-01   # pouzijte spravne jmeno vetve
     ```
 
 5. V GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu.
