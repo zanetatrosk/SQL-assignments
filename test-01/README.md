@@ -43,7 +43,7 @@ Nyní máte prostředí připravené a dále můžete pracovat na testu
     git add --all
     git status  # zkontrolujte, zda necommitujete něco, co v repositáři být nemá
     git commit -m "test-01 - odevzdání "
-    git push -u origin testl-01
+    git push -u origin test-01
     ```
 
 5. V GitLabu vytvořte **merge request** mezi větví master a test-01 zadejte jej svému cvičícímu.
