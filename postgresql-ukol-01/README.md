@@ -1,17 +1,17 @@
 # BI-SQL domácí úkoly a semestrální práce
 
-## Úkol PostgreSQL 01 (bonosový) - až 7 bodů
+## Úkol PostgreSQL 01 (bonusový)  až 7 bodů
 
 
  Úlohu 1 a 2 z části PL/SQL((https://edux.fit.cvut.cz/courses/BI-SQL/start#priklad_3_az_7_bodu)
-) - tedy procedury, která naplní daty jednu obyčejnou a jednu kvztahovou tabulku, přepište do PLPg/SQL a oddlaďte v PostgreSQL.
+) - tedy procedury, která naplní daty jednu obyčejnou a jednu vztahovou tabulku, přepište do PLPg/SQL a oddlaďte v PostgreSQL.
 
-Řešení nechť má tyto soubory:
+Řešení nechť sestává z těchto souborů:
   * tabulky.sql  - definice tabulek
   * procedury.sql - definice funkcí, které data vygenerují
   * otestuj.sql - vytvoří tabulky a funkce a provede otestování
-  * protocol - přípona podle způsobu, jak vznikne (například .jpg, pokud budete dělat snímky obrazovky v grafickém nástroji, txt, pokud půjde o textový soubor, ...); soubor protocol musí demonstrovat, že se vám na postgreSQL podařilo tabulky vytvořit a naplnit daty, coučástí bude i výsledek příkazů select count(*) from tab1; select count(*) from tab2.
-  * zjednodušenou ukázku, ze které můžete vyjít najdete přímo v tomto adresáři
+  * protocol.X - přípona podle způsobu, jak vznikne (například .jpg, pokud budete dělat snímky obrazovky v grafickém nástroji, txt, pokud půjde o textový soubor, ...); soubor protocol musí demonstrovat, že se vám na postgreSQL podařilo tabulky vytvořit a naplnit daty, součástí bude i výsledek příkazů select count(*) from tab1; select count(*) from tab2.
+  * zjednodušenou ukázku, ze které můžete vyjít, najdete přímo v tomto adresáři
   * soubor protokol.txt byl vytvořen spuštěním souboru otestuj.sql v psql nad databází jmenem ruzne timto zpusobem:
 
   ```psql -f otestuj.sql -a -b -e &> protokol.txt ruzne```
