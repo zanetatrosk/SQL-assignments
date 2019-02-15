@@ -19,7 +19,7 @@
 ### Jak
 
   * Úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
-  * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b172/valenta; tento projekt bude dále označován **origin**.
+  * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/b182/valenta; tento projekt bude dále označován **origin**.
   * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
     * Na začátku semestru máte ve svém projektu (origin) první větev (branch), které se tradičně říká **master**. Tuto větev nemůžete upravovat, je zamčená. V ní je čerstvá kopie projektu homeworks (upstream). Její obsah se automaticky aktualizuje, když změníme nebo přidáme nějaké zadání.
     * Naklonujete si (příkaz git clone) tento projekt na svůj lokální počítač a tím máte inicializované prostředí s čertvými variantami zadání.
@@ -49,7 +49,7 @@ Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce
 2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji:
 
     ```sh
-    git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
+    git clone git@gitlab.fit.cvut.cz:BI-SQL/b182/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
     cd BI-SQL/homeworks
     ```
 
@@ -87,7 +87,7 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
 
 ## Chcete-li vědět něco více o Gitu
 
- * Předmět BI-GIT vyučovaný na FITu https://edux.fit.cvut.cz/courses/BI-GIT/ Pokud na něj máte přístup, najdete tam výborně zpracované slides v češtině.
+ * Předmět BI-GIT vyučovaný na FITu https://courses.fit.cvut.cz/BI-GIT/ Pokud na něj máte přístup, najdete tam výborně zpracované slides v češtině.
  * Ze stránek předmětu jsou i následující odkazy:
    * https://git-scm.com/doc - Dokumentace
    * https://git-scm.com/book/cs/v1 - Kniha „Pro Git“ (PDF, tisk).
