@@ -23,7 +23,7 @@
   * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
     * Na začátku semestru máte ve svém projektu (origin) první větev (branch), které se tradičně říká **master**. Tuto větev nemůžete upravovat, je zamčená. V ní je čerstvá kopie projektu homeworks (upstream). Její obsah se automaticky aktualizuje, když změníme nebo přidáme nějaké zadání.
     * Naklonujete si (příkaz git clone) tento projekt na svůj lokální počítač a tím máte inicializované prostředí s čertvými variantami zadání.
-    * Pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`) respektive `semestralni-prace`, do té se přepnete pomocí **checkout** a úkol vyřešíte.
+    * Pro každý jednotlivý úkol, který budete odevzdávat, již máte před-vytvořenou (nebo si vyvytvoříte) **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`) respektive `semestralni-prace`, do té se přepnete pomocí **checkout** a úkol vyřešíte.
     * Vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v GitLabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte, že:
       * Vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit.
       * Vyučující může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**.
