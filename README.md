@@ -26,7 +26,7 @@
     * Pro každý jednotlivý úkol, který budete odevzdávat, si vyrobíte **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`) respektive `semestralni-prace`, do té se přepnete pomocí **checkout** a úkol vyřešíte.
     * Vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v GitLabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte, že:
       * Vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit.
-      * Vyučují může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**.
+      * Vyučující může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**.
       * Vy to uvidíte, můžete na připomínky reagovat (přímo v GitLabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře.
       * Když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřít (**resolve**), merge uzavřít [^1] (**close**) a udělit vám příslušné body.
 
