@@ -9,7 +9,7 @@
 2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji:
 
     ```sh
-    git clone git@gitlab.fit.cvut.cz:BI-SQL/b172/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
+    git clone git@gitlab.fit.cvut.cz:BI-SQL/b182/{username}.git BI-SQL/homeworks  # pouzije spravný kod semestru a username
     cd BI-SQL/homeworks
     ```
 
