@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-  * Způsob odevzdávání (nepovinných) domácích úkolů a semestrálek je inspirován postupem, který již některé programátorsky orientované předměty na FIT používají.
+  * Způsob odevzdávání domácích úkolů je inspirován postupem, který již některé programátorsky orientované předměty na FIT používají.
   * Konkrétně vycházíme z [návodu pro předmět MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/exercises/blob/master/README.adoc)
   * Vše je založeno na technologiích [Git](https://git-scm.com/) a [GitLab](https://about.gitlab.com/)
   * Pokud je neznáte, není potřeba propadat panice, podle níže uvedeného návodu to snadno zvládnete.
@@ -18,12 +18,12 @@
 
 ### Jak
 
-  * Úkoly budeme (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
+  * Úkoly budu (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
   * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/B182/valenta; tento projekt bude dále označován **origin**.
   * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
-    * Na začátku semestru máte ve svém projektu (origin) první větev (branch), které se tradičně říká **master**. Tuto větev nemůžete upravovat, je zamčená. V ní je čerstvá kopie projektu homeworks (upstream). Její obsah se automaticky aktualizuje, když změníme nebo přidáme nějaké zadání.
+    * Na začátku semestru máte ve svém projektu (origin) první větev (branch), které se tradičně říká **master**. Tuto větev nemůžete upravovat, je zamčená. V ní je čerstvá kopie projektu homeworks (upstream). Její obsah se aktualizuje, když změníme nebo přidáme nějaké zadání.
     * Naklonujete si (příkaz git clone) tento projekt na svůj lokální počítač a tím máte inicializované prostředí s čertvými variantami zadání.
-    * Pro každý jednotlivý úkol, který budete odevzdávat, již máte před-vytvořenou (nebo si vyvytvoříte) **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`) respektive `semestralni-prace`, do té se přepnete pomocí **checkout** a úkol vyřešíte.
+    * Pro každý jednotlivý úkol, který budete odevzdávat, již máte před-vytvořenou (nebo si vyvytvoříte) **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`), do té se přepnete pomocí **checkout** a úkol vyřešíte.
     * Vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v GitLabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte, že:
       * Vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit.
       * Vyučující může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**.
@@ -49,7 +49,7 @@ Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce
 2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji (v adresáři, ve kterém spustíte příkaz, vznikne podadresář s vaším uživatelským jménem):
 
     ```sh
-    git clone git@gitlab.fit.cvut.cz:BI-SQL/B182/{username}.git # pouzije spravný kod semestru a username
+    git clone git@gitlab.fit.cvut.cz:BI-SQL/B192/{username}.git # pouzije spravný kod semestru a username
     cd {username}
     ```
 
