@@ -19,6 +19,7 @@ Spotřebu krmiva zobrazte nejprve po jednotlivých druzích zvířat a potom cel
 
 Výstup tedy bude vypadat takto (hodnoty jsou vymyšlené):
 
+```
 banany      opice     50
 banany      slon      300
 banany      nosorožec 100
@@ -28,8 +29,9 @@ seno        slon      40
 banany                450
 seno                  540
 ...
+```
 
-hint: můžete použít PL/SQL proceduru s kurzory a/nebo rozšíření klauzule group by v SQL o operátory rollup a cube
+**hint:** můžete použít PL/SQL proceduru s kurzory a/nebo rozšíření klauzule group by v SQL o operátory rollup a cube
 
 ### úloha 2
 
@@ -44,7 +46,7 @@ Procedura vygeneruje nové záznamy o krmení tímto způsobem:
 
 Procedura nechť reaguje chybou ORA-20001: Od druhu **nazevdruhu** v ZOO nejsou žádná zvířata.
 
-hint: pro náhodnou volbu z nějaké sady dat můžete použít konstrukci:
+**hint:** pro náhodnou volbu z nějaké sady dat můžete použít konstrukci:
 
 select .... order by dbms_random.value fetch next 1 rows only;
 
