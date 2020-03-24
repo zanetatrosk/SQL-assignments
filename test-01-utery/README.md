@@ -48,7 +48,7 @@ Procedura nechť reaguje chybou ORA-20001: Od druhu **nazevdruhu** v ZOO nejsou 
 
 **hint:** pro náhodnou volbu z nějaké sady dat můžete použít konstrukci:
 
-select .... order by dbms_random.value fetch next 1 rows only;
+`select .... order by dbms_random.value fetch next 1 rows only;`
 
 ## Očekávané výstupy
  - soubor uloha1-reseni.sql s resenim první ulohy
