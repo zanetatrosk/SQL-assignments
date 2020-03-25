@@ -50,7 +50,7 @@ create table sponzor(
 
 Napište package **sponzor_pkg** ktery bude mít dvě procedury:
  - **kopiruj_kmotry**, která do tabulky sponzor doplní informace čerpané z tabulky zvíře. Každý kmotr zvířete je totiž sponzorem. Pro každé zvíře, které má kmotra, vložte tedy do tabulky sponzor dvojici (id_kmotra, id_zvirete)
- - **generuj_sponozry**, která dostane na vstupu parametr pocet_sponzorství a vygeneruje příšlušný počet záznamů v tabulce sponzor. Záznamy generujte náhodným výběrem z tabulek zvíře a sponzor. **POZOR** zaměstnanec může sponzorovat více zvířat a zvíře může mít více sponzorů, ale vzhledem k existenci prímárního klíče **sponzor_pk** nemůže konkrétní zaměstnanec sponozorovat konkrétní zvíře vícekrát než jednou. Vaše procedura proto musí umět ošetřit situaci, kdy se náhodným výběrem vygeneruje stejná dvojice (id_osetrovatele, id_zvirete), která v tabulce sponzor již existuje.
+ - **generuj_sponozry**, která dostane na vstupu parametr pocet_sponzorství a vygeneruje příšlušný počet záznamů v tabulce sponzor. Záznamy generujte náhodným výběrem z tabulek zvíře a osetrovatel. **POZOR** zaměstnanec může sponzorovat více zvířat a zvíře může mít více sponzorů, ale vzhledem k existenci prímárního klíče **sponzor_pk** nemůže konkrétní zaměstnanec sponozorovat konkrétní zvíře vícekrát než jednou. Vaše procedura proto musí umět ošetřit situaci, kdy se náhodným výběrem vygeneruje stejná dvojice (id_osetrovatele, id_zvirete), která v tabulce sponzor již existuje.
 
 **hint:** pro náhodnou volbu z nějaké sady dat můžete použít konstrukci:
 
