@@ -29,3 +29,4 @@
   - kompletní zpracování jednotho SQL dotazu viz zadání za 5 bodů
   - zpracovat můžete až tři SQL dotazy, maximálně tedy lze získat 15 bodů
 
+
