@@ -3,7 +3,7 @@
 ## Disclaimer
 
   * Způsob odevzdávání domácích úkolů je inspirován postupem, který již některé programátorsky orientované předměty na FIT používají.
-  * Konkrétně vycházíme z [návodu pro předmět MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/exercises/blob/master/README.adoc)
+  * Konkrétně vycházíme z [návodu pro předmět NI-RUB](https://gitlab.fit.cvut.cz/ni-rub/exercises/blob/master/README.adoc)
   * Vše je založeno na technologiích [Git](https://git-scm.com/) a [GitLab](https://about.gitlab.com/)
   * Pokud je neznáte, není potřeba propadat panice, podle níže uvedeného návodu to snadno zvládnete.
 
@@ -19,16 +19,16 @@
 ### Jak
 
   * Úkoly budu (postupně) zveřejňovat v projektu https://gitlab.fit.cvut.cz/BI-SQL/homeworks; dále bude označován jako **upstream**.
-  * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/B182/valenta; tento projekt bude dále označován **origin**.
+  * Vaše řešení budete odevzdávat do svých soukromých projektů gitlab.fit.cvut.cz/BI-SQL/{semestr}/{user-name} například https://gitlab.fit.cvut.cz/BI-SQL/B202/valenta; tento projekt bude dále označován **origin**.
   * **Podstatný trik** pro to, aby proces odevzdání splňoval požadavky zmíněné v sekci „Proč“, spočívá v těchto krocích, **které je potřeba pochopit a dodržovat**:
     * Na začátku semestru máte ve svém projektu (origin) první větev (branch), které se tradičně říká **master**. Tuto větev nemůžete upravovat, je zamčená. V ní je čerstvá kopie projektu homeworks (upstream). Její obsah se aktualizuje, když změníme nebo přidáme nějaké zadání.
     * Naklonujete si (příkaz git clone) tento projekt na svůj lokální počítač a tím máte inicializované prostředí s čertvými variantami zadání.
-    * Pro každý jednotlivý úkol, který budete odevzdávat, již máte před-vytvořenou (nebo si vyvytvoříte) **vlastní samostatnou** větev (**branch**), kterou nazvete `ukol-NN`, kde `NN`  je číslo úkolu (například `ukol-01`), do té se přepnete pomocí **checkout** a úkol vyřešíte.
+    * Pro každý jednotlivý úkol, který budete odevzdávat, již máte před-vytvořenou (nebo si vyvytvoříte) **vlastní samostatnou** větev (**branch**), kterou nazvete `uloha-NN`, kde `NN`  je číslo úkolu (například `uloha-01`), do té se přepnete pomocí **checkout** a úkol vyřešíte.
     * Vyřešený úkol nahrajete do GitLabu (operace **push**) a poté v GitLabu vyrobíte požadavek na sjednocení (**merge request**) větví master a větve s odevzdaným úkolem; merge request **přiřadíte svému vyučujícímu**; tímto krokem zajistíte, že:
       * Vyučující uvidí, že jste práci odevzdali a chcete ji zkontrolovat a ohodnotit.
       * Vyučující může v rámci merge request procesu provádět **revizi kódu** a **komentovat jednotlivé části**.
       * Vy to uvidíte, můžete na připomínky reagovat (přímo v GitLabu formou diskuse) a zároveň provádět požadované **opravy** a formou **commit**ů je propagovat do repozitáře.
-      * Když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřít (**resolve**), merge uzavřít [^1] (**close**) a udělit vám příslušné body.
+      * Když je vyučující spokojen, může jednotlivé diskuse ke kódu uzavřít (**resolve**), merge uzavřít (**close**) a udělit vám příslušné body.
 
 
 ## Co potřebuji instalovat a konfigurovat?
@@ -41,7 +41,7 @@
 
 ## Příkazy pro realizaci
 
-Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu MI-RUB](https://gitlab.fit.cvut.cz/mi-rub/exercises/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci „Jak“. Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
+Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce potřebovat. Jedná se o [zjednodušený a upravený návod pro studenty předmětu NI-RUB](https://gitlab.fit.cvut.cz/ni-rub/exercises/blob/master/README.adoc) bez ambice na vysvětlení. Nezbytné je pochopení těchto kroků popsané v sekci „Jak“. Pro větší porozumění je níže uvedená sekce s odkazy na dostupnou dokumentaci a návody.
 
 ### Začátek semestru - inicializace projektu
 
@@ -49,7 +49,7 @@ Zde uvádíme pouze sekvence příkazů, které budete pro odevzdávání práce
 2. Vyrobte si **lokální kopii** vašeho repository **origin** na svém stroji (v adresáři, ve kterém spustíte příkaz, vznikne podadresář s vaším uživatelským jménem):
 
     ```sh
-    git clone git@gitlab.fit.cvut.cz:BI-SQL/B192/{username}.git # pouzije spravný kod semestru a username
+    git clone git@gitlab.fit.cvut.cz:BI-SQL/B202/{username}.git # pouzije spravný kod semestru a username
     cd {username}
     ```
 
@@ -64,24 +64,26 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
    git pull
    ```
 
-2. Vytvořte si nový branch pro úkol (například) ukol-01 a přepněte se na něj:
+2. Vytvořte si nový branch pro úkol (například) uloha-01 a přepněte se na něj:
 
     ```sh
     git branch ukol-01
     git checkout ukol-01
     ```
 
-3. Nezapomeňte se přepdnout do správného adresáře `ukol-NN` resp. `semestralni-prace` a úkol vyřešte.
+3. Nezapomeňte se přepdnout do správného adresáře `uloha-NN` resp. a úkol vyřešte.
 4. Změny promítněte do vzdáleného repozitáře na GitLabu:
 
     ```sh
     git add --all
     git status  # zkontrolujte, zda necommitujete něco, co v repositáři být nemá
-    git commit -m "ukol-1: První iterace"  # napište smyslupný komentář v podobném stylu
-    git push -u origin ukol-01   # pouzijte spravne jmeno vetve
+    git commit -m "uloha-01: První iterace"  # napište smyslupný komentář v podobném stylu
+    git push -u origin uloha-01   # pouzijte spravne jmeno vetve
     ```
 
-5. V GitLabu vytvořte **merge request** mezi větví master a ukol-01 a zadejte jej svému cvičícímu.
+    POZOR, je potřeba si uvědomit, že adresář a branch jsou dva různé koncepty. Z hlediska logiky úkolů očekávám, že v rámci jednoho 'branch' uděláte změny pouze v jednom adresáři, jinak se v tom velmi špatně orientuje a já to budu bodově penalizovat!
+
+5. V GitLabu vytvořte **merge request** mezi větví master a uloha-01 a zadejte jej svému cvičícímu.
 6. V GitLabu sledujte vývoj komentářů, odpovídejte na ně, případně doplňujte kód a propagujte jej na GitLab (krok 4).
 
 
@@ -96,4 +98,5 @@ Nyní máte prostředí připravené a dále můžete pracovat na jednotlivých 
    * http://firstaidgit.io - Rychlá odpověď na otázky týkající se Gitu, agregace ze Stack Overflow a dalších zdrojů.
  * Ten výše uvedený „hravý tutoriál pro práci s větvemi“ je opravdu super. Doporučuji.
 
-[^1]: Merge requesty není nutné mergovat do hlavní větve. Naopak to není doporučováno, neb tím mohou vznikat zbytečné komplikace s konflikty.
+* Merge requesty nebudu skutečně mergovat do hlavní větve, neb tím mohou vznikat zbytečné komplikace s konflikty. Proto je budu namísto toho zavírat.
+
