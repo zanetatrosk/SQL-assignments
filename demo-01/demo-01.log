@@ -1,0 +1,32 @@
+SQL> @./uloha-1-reseni.sql
+Enter value for cislo_vydry: 4
+old   7:   vcv number := &cislo_vydry;  -- vydra, jejiz sourozence hledame
+new   7:   vcv number := 4;  -- vydra, jejiz sourozence hledame
+Vydra cislo 4 ma tyto sourozence:                                               
+Lilien                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> @./uloha-1-reseni.sql
+Enter value for cislo_vydry: 9
+old   7:   vcv number := &cislo_vydry;  -- vydra, jejiz sourozence hledame
+new   7:   vcv number := 9;  -- vydra, jejiz sourozence hledame
+declare
+*
+ERROR at line 1:
+ORA-20002: Informace o sourozencich vydry cislo 9 je neuplna.
+ORA-06512: at line 33 
+
+
+SQL> @./uloha-1-reseni.sql
+Enter value for cislo_vydry: 16
+old   7:   vcv number := &cislo_vydry;  -- vydra, jejiz sourozence hledame
+new   7:   vcv number := 16;  -- vydra, jejiz sourozence hledame
+declare
+*
+ERROR at line 1:
+ORA-20001: Vydra 16 neni v tabulce vyder.
+ORA-06512: at line 31 
+
+
+SQL> spool off
