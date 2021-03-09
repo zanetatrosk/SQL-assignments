@@ -22,7 +22,7 @@
    použijte tyto tři: (10, mužská), (10, ženská), (10, obě)
  - soubor dotazy.log - zde budou vidět výsledky výše uvedených dotazů; při ladění postačí pracovat s čísly vyder, jména pak dodá až procedura.
  - soubor procedura.sql, kde bude požadovaná procedura s parametrizovaným kurzorem
- - soubor test-procedura.sql - použijte následující testovací data (Iason, mužska), (Iason, ženská), (Iason, obě), (Zoran, obě), (Celestyn, obě), poslední dva příklady testují situace, kdy neznáme předky vydry a nebo zadáme neexistující vydru.
+ - soubor test-procedura.sql - použijte následující testovací data (Iason, mužská), (Iason, ženská), (Iason, obě), (Zoran, obě), (Celestyn, obě), poslední dva příklady testují situace, kdy neznáme předky vydry a nebo zadáme neexistující vydru.
  - soubor test-procedura.log s výsledky
 
 ## Bodování
