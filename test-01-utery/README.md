@@ -1,7 +1,7 @@
 # Test 01  - PL/SQL
 
 ## Cíle
-  - v časovém limitu (120 minut) pokud možno kompletně odladit dva níže zadané úkoly
+  - v časovém limitu (90 minut) pokud možno kompletně odladit dva níže zadané úkoly
   - tím dokázat, že jste se naučili něco z PL/SQL a SQL a získat body
 
 ## Popis databáze
