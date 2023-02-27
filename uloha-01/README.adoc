@@ -1,0 +1,48 @@
+= uloha 01  - PL/SQL - procedury, funkce
+:toc:
+:toclevels: 2
+:sectnums:
+
+
+== Cíle
+* oprášit svoji semestrálku z BI-DBS, připomenout si strukturu databáze
+* migrovat ji (nebo její část) do Oracle, vzhledem k dalšímu zadání stačí struktura (protože stejně budete psát plnící procedury)
+* zdokumentovat ji - formou obrázku konceptuálního nebo relačního schématu (lze vzít z portálu)
+* vyzkoušet si napsat procedury pro plnění daty pro dvě vhoně zvolené tabulky a jednu vztahovou mezi nimi
+
+== Pokyny
+* do tohoto adresáře umístěte soubor **moje-schema.jpg**, ve kterém budue konceptuální schéma vaší semestrální práce (dá se převzít ze semestrálky z BI-DBS)
+ * pokud se k semestrálce z BI-DBS již nedostanete nebo ji z jiných důvodů nemáte, pak:
+ ** pokud existuje ve vašem DB schématu Oracle, ke kterému jste připojeni, můžete použít funkci "Show visuzalization", kterou DataGrip poskytuje a namísto konceptuálního schématu ze semestrálky BI-DBS dodejte relační vizualizaci vytvořenou nástrojem DataGrip
+ ** pokud ve vašem DB schématu žádné tabulky, ze kterých byste mohli vyjít nejsou, pak si nějaké 3 vytvořte, není to příliš práce navíc...
+ ** bude vám to ale trochu chybět ještě v následující bodované úloze, nicméně i to se dá kreativně doplnit
+ * do tohoto adresáře dále umístěte sql scripty, které vytovříte:
+ ** plnení_tabulka_1.sql
+ ** plneni_tabulka_2.sql
+ ** plneni_vztahova_tabulka.sql
+ * do tohoto adresáře umístěte log soubory, které ukazují, že výše uvedené procedury fungují; každá procedura necnechť na výstupu ukáže, kolik řádek do tabulky vložila
+ ** plnení_tabulka_1.log
+ ** plneni_tabulka_2.log
+ ** plneni_vztahova_tabulka.log
+
+== Zadání
+* ve svém schématu vytipujte dvě vhodné tabulky a mezi nimi jednu vztahovou
+* pro každou z nich napište a odlaďte proceduru, jejímž vstupním parametrem bude počet řádků, které mají být vloženy
+* při generování dat se inspirujte příklady ze cvičení, snažte se, aby data byla "psaudonáhodná", pro jejich generování používejte funkce pro generování náhodných čísel link:https://docs.oracle.com/database/121/TTPLP/d_random.htm#TTPLP71231[**dbms_random** package]
+** lze použít pro generování obyč tabulek i těch vztahových 
+** například si definuji sekvenci jmen a sekvenci příjmení a dělám néhodné kombinace
+* inspirace pro generování vztahových tabulek (řešení úkoů z minulých let)
+** link:https://courses.fit.cvut.cz/BI-SQL/lectures/02/index.html#_vztahov%C3%A1-tabulka-s-n%C3%A1hodn%C3%BDm-v%C3%BDb%C4%9Brem-p%C5%99%C3%ADklad-1[příklad 1]
+** link:https://courses.fit.cvut.cz/BI-SQL/lectures/02/index.html#_vztahov%C3%A1-tabulka-s-n%C3%A1hodn%C3%BDm-v%C3%BDb%C4%9Brem-p%C5%99%C3%ADklad-2[příklad 2]
+
+
+== Testování
+*  pro každou proceduru vytvořte log soubor (nebo log podadresář adresář), který umístíte do stejného adresáře
+** inspriaci najdete v link:../demo-01/[v demo-01] adresáři (konkrétně link:../demo-01/demo-01.log[soubor demo-01.log])
+** **alterntivně** můžete demostrovat funkcionalitu klidně i formou snapshotů z DataGripu
+** musí prostě být zřejmé, že:
+*** voláte proceduru (s nějakým vhodným parametrem)
+*** že procedura se provedla
+*** vhodným způsobem demonstrované, že provedla očekávanou akci 
+* ať už to uděláte jakkoliv, podstatné je, abych se v odevzdaném výsledku dokázal rychle zorientovat a viděl, že váš kód funguje
+** čím více se budu muset zanořovat do kódu, abych pochopil, co jste vytovřili, tím hůře :-)
