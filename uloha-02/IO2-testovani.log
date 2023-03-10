@@ -1,0 +1,27 @@
+TROSKZAN> begin
+              --smazani dat z tabulek
+              EXECUTE IMMEDIATE 'DELETE FROM "RIDER"';
+              EXECUTE IMMEDIATE 'DELETE FROM "HORSE_RIDER"';
+
+          end;
+[2023-03-10 20:38:09] completed in 34 ms
+TROSKZAN> insert into Rider values (1, 'mno')
+[2023-03-10 20:38:10] 1 row affected in 151 ms
+TROSKZAN> update HORSE SET age=2 where ID_KUN=15
+[2023-03-10 20:38:10] 1 row affected in 33 ms
+TROSKZAN> insert into HORSE_RIDER values (15, 1)
+[2023-03-10 20:38:10] [72000][20001]
+[2023-03-10 20:38:10] 	ORA-20001: kun mladsi nez 3 let nemuze mit jezdce
+[2023-03-10 20:38:10] 	ORA-06512: at "TROSKZAN.INSERT_OR_UPDATE_HORSERIDER", line 7
+[2023-03-10 20:38:10] 	ORA-04088: error during execution of trigger 'TROSKZAN.INSERT_OR_UPDATE_HORSERIDER'
+[2023-03-10 20:38:10] Position: 0
+TROSKZAN> update HORSE SET age=4 where ID_KUN=15
+[2023-03-10 20:38:12] 1 row affected in 33 ms
+TROSKZAN> insert into HORSE_RIDER values (15, 1)
+[2023-03-10 20:38:13] 1 row affected in 30 ms
+TROSKZAN> update HORSE SET age=1 where ID_KUN=15
+[2023-03-10 20:38:13] [72000][20001]
+[2023-03-10 20:38:13] 	ORA-20001: kun mladsi nez 3 let nemuze mit jezdce
+[2023-03-10 20:38:13] 	ORA-06512: at "TROSKZAN.UPDATE_RIDDEN_HORSE", line 7
+[2023-03-10 20:38:13] 	ORA-04088: error during execution of trigger 'TROSKZAN.UPDATE_RIDDEN_HORSE'
+[2023-03-10 20:38:13] Position: 0

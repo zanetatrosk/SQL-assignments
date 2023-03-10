@@ -18,7 +18,6 @@ DECLARE
     is_there Integer;
 BEGIN
    select count(*) into is_there from HORSE_RIDER where HORSE_RIDER.ID_KUN = :old.ID_KUN;
-   DBMS_OUTPUT.PUT_LINE(:new.age);
    if is_there != 0 and :new.age is not null and :new.age < 3
        then
        RAISE_APPLICATION_ERROR(-20001, 'kun mladsi nez 3 let nemuze mit jezdce' );

@@ -1,0 +1,4 @@
+Máme databázi která eviduje jezdce, kone, majitele a nabidky prodeje koní.
+
+IO1: kun muze byt na prodej jen pokud je jezden nejakym jezdcem.
+IO2: kun mladsi 3 let nemuze mit jezdce

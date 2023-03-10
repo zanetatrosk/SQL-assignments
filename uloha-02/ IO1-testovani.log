@@ -1,0 +1,32 @@
+[2023-03-10 21:25:26] Connected
+TROSKZAN> alter session set current_schema = TROSKZAN
+[2023-03-10 21:25:26] completed in 12 ms
+TROSKZAN> declare
+              idx INTEGER := 0;
+          begin
+              --smazani dat z tabulek
+              EXECUTE IMMEDIATE 'DELETE FROM "OFFER"';
+              COMMIT;
+              --priklad pridani kone ktery nema jezdce, tudiz nemuze byt na prodej
+              CHECK_NEW_OFFER.INSERT_OFFER(idx,1, 0, null, null);
+              --priklad pridani kone ktery ma jezdce, tudiz muze byt pridan do tabulky
+               CHECK_NEW_OFFER.INSERT_OFFER(idx,15,0,null,null);
+          end;
+[2023-03-10 21:25:26] [72000][20001]
+[2023-03-10 21:25:26] 	ORA-20001: kun neni jezden zadnym jezdcem
+[2023-03-10 21:25:26] 	ORA-06512: at "TROSKZAN.CHECK_NEW_OFFER", line 12
+[2023-03-10 21:25:26] 	ORA-06512: at line 8
+[2023-03-10 21:25:26] Position: 0
+TROSKZAN> declare
+              idx INTEGER := 0;
+          begin
+               -- priklad updatu offer na id kone co nema jezdce
+               CHECK_NEW_OFFER.UPDATE_OFFER(idx,10,0,null, null);
+               --priklad updatu offer co by se mel provest
+               CHECK_NEW_OFFER.UPDATE_OFFER(idx,15,0,null, null);
+          end;
+[2023-03-10 21:25:29] [72000][20001]
+[2023-03-10 21:25:29] 	ORA-20001: kun neni jezden zadnym jezdcem
+[2023-03-10 21:25:29] 	ORA-06512: at "TROSKZAN.CHECK_NEW_OFFER", line 25
+[2023-03-10 21:25:29] 	ORA-06512: at line 5
+[2023-03-10 21:25:29] Position: 0
