@@ -1,0 +1,54 @@
+:toc:
+:sectnums:
+:toclevel: 3
+
+= Test PL/SQL - pondělí 14.30
+
+== data
+
+* v adresáři máte k dispozici skript **database.sql**, který vytvoří tabulky a vloží do nich testovací data
+* ve stejném adresáři máte též vizualizované relační schéma databáze
+
+== úkol 1 - funkce pocty_mist_v_rez(jmeno_zakaznika) : integer
+
+* v PL/SQL navrhněte a odlaďte funkce **pocty_mist_v_rez**
+* vystupním parametrem je jméno zákazníka (jmenoz v tabulce zakaznik)
+* funkce vrátí sumu počtu míst (pocet_mist v tabulce lod) ze všech rezervací, které zákazník má v tabulce rezervace
+
+=== výjimky
+
+* funkce nechť správně reaguje na neexistujícího zákazníka (**ORA-20001: Zákazník se jménem XXX není registrovaným zákazníkem.**
+
+=== testování
+
+* otestujte na těchto vstupních hodnotách:
+* **Gerald** (rezervoal si 2x stejnou loď), očekávaný výsledek je 290
+* **Odyseus** (nerezervoval si nic), očekávaný výsledek je 0
+* **Yoda** (není registrovaný zákazník), očekávaný výsledke je ORA-20001
+
+== úkol 2 - trigger zkontroluj_rezervaci
+
+* nad tabulkou **plavba_s_pruvodcem** navrhněte a oddlaďte trigger **zkontroluj_rezervaci**
+* trigger bude reagovat na **insert a update** tabulky **plavba_s_pruvodcem**
+* trigger zkontroluje, že měněný nebo vkládaný záznam (do tabulky plavba_s_pruvodcem) má odpovídající rezervaci v tabulce rezervací
+* **odpovídající rezervací** se rozumí shoda trojice (lodid,zid,datum) (pozor v tabulce rezervace je atribut datum_res, v tabulce plavba_pruv je atribut datum_pl)
+* pokud vkládaný/měněný záznam v plavba_s_průvodcem nemá odpovídající rezervaci, trigger vyvolá vyjímku: **ORA-20002: Pro tuto plavbu není rezervace** a příslušnou změnu neudělá.
+* nesoulad dat v tabulkách rezervace a lod_s_pruvodcem neřešte, trigger bude reagovat pouze na případný insert nebo update
+
+=== testování
+
+* sami si navrhněte data, kdy během testu jeden případ update projde a jeden neprojde a jeden případ insert projde a jeden neprojde
+
+== odevzdaní
+
+* očekávám, že odevzdáte 6 souborů:
+* ukol-1
+** **ukol-1-implementace.sql**
+** **ukol-1-test-scenar.sql**
+** **ukol-1-testlog**  (log, text, obrazek, ... jak jste zvyklí)
+* ukol-2
+** **ukol-2-implementace.sql**
+** **ukol-2-test-scenar.sql**
+** **ukol-2-testlog**  (log, text, obrazek, ... jak jste zvyklí)
+
+
