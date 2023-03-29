@@ -1,0 +1,53 @@
+:toc:
+:sectnums:
+:toclevel: 3
+
+= Test PL/SQL - středa 14.30
+
+== data
+
+* v adresáři máte k dispozici skript **database.sql**, který vytvoří tabulky a vloží do nich testovací data
+* ve stejném adresáři máte též vizualizované relační schéma databáze
+
+== úkol 1 - funkce pocty_mist_v_pokr(jmeno_namornika) : integer
+
+* v PL/SQL navrhněte a odlaďte funkce **pocty_mist_v_pokr**
+* vstupním parametrem je jméno námořníka (jmenon v tabulce namornik)
+* funkce vrátí sumu počtu míst (pocet_mist v tabulce lod) ze všech pokrytí (spojů/linek), které námořník realizoval
+
+=== výjimky
+
+* funkce nechť správně reaguje na neexistujícího námořníka (**ORA-20001: Námořník se jménem XXX není registrovaným námořníkem.**
+
+=== testování
+
+* otestujte na těchto vstupních hodnotách:
+* **Lubber** (má na kontě 2 pokrytí s loděmi 1 a 4), očekávaný výsledek je 120 (100+20)
+* **Dustin** (nepokryl žádný spoj), očekávaný výsledek je 0
+* **Yoda** (není registrovaný námořník), očekávaný výsledke je ORA-20001
+
+== úkol 2 - trigger zkontroluj_psp
+
+* nad tabulkou **plavba_s_pruvodcem** navrhněte a oddlaďte trigger **zkontroluj_psp**
+* trigger bude reagovat na **insert a update** tabulky **plavba_s_pruvodcem**
+* trigger zkontroluje, že měněný nebo vkládaný záznam (do tabulky plavba_s_pruvodcem) bude realizovat (sloupeček NID) jen takový námořník, který již pokryl nějaký spoj (tabulka pokrytí) s lodí, která má alespoň tolik míst, jako loď, ve které má realizovat plavbu_s_pruvodcem.
+* pokud vkládaný/měněný záznam v plavba_s_průvodcem nemá námořníka s odpovídající kvalifikací (viz výše), trigger vyvolá vyjímku: **ORA-20002: Pro tuto plavbu není námořník XXX kvalifikován.** a příslušnou změnu neudělá.
+* nesoulad dat v tabulkách pokryti a plavba_s_pruvodcem neřešte, trigger bude reagovat pouze na případný insert nebo update
+
+=== testování
+
+* sami si navrhněte data, kdy během testu jeden případ update projde a jeden neprojde a jeden případ insert projde a jeden neprojde
+
+== odevzdaní
+
+* očekávám, že odevzdáte 6 souborů:
+* ukol-1
+** **ukol-1-implementace.sql**
+** **ukol-1-test-scenar.sql**
+** **ukol-1-testlog**  (log, text, obrazek, ... jak jste zvyklí)
+* ukol-2
+** **ukol-2-implementace.sql**
+** **ukol-2-test-scenar.sql**
+** **ukol-2-testlog**  (log, text, obrazek, ... jak jste zvyklí)
+
+
