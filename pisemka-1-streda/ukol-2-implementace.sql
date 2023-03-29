@@ -12,9 +12,6 @@ BEGIN
     select max(POCET_MIST) into pocet_max from LOD join POKRYTI using (LODID) where NID = :new.ZID;
     DBMS_OUTPUT.PUT_LINE(pocet_max);
     select JMENON into jmeno from NAMORNIK where NAMORNIK.NID = :new.NID;
-    if pocet_max is null then
-        RAISE_APPLICATION_ERROR(-20002, 'Pro tuto plavbu není námořník ' || jmeno || 'klasifikován');
-    end if;
     if pocet_max < pocet_m then
         RAISE_APPLICATION_ERROR(-20002, 'Pro tuto plavbu není námořník ' || jmeno || 'klasifikován');
     end if;

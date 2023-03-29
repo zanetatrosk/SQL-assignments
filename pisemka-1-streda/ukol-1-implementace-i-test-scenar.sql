@@ -7,7 +7,7 @@ IS
 BEGIN
     Select count(*) into flag from NAMORNIK where NAMORNIK.JMENON=n_name;
     if not flag != 0
-        then  RAISE_APPLICATION_ERROR(-20001, 'Námořník se jménem XXX není registrovaným námořníkem' );
+        then  RAISE_APPLICATION_ERROR(-20001, 'Námořník se jménem' || n_name || 'není registrovaným námořníkem' );
     end if;
     Select NID into id from NAMORNIK where NAMORNIK.JMENON=n_name;
     select SUM(POCET_MIST) into res from LOD join POKRYTI using (LODID) where NID = id;
