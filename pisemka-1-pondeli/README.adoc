@@ -12,7 +12,7 @@
 == úkol 1 - funkce pocty_mist_v_rez(jmeno_zakaznika) : integer
 
 * v PL/SQL navrhněte a odlaďte funkce **pocty_mist_v_rez**
-* vystupním parametrem je jméno zákazníka (jmenoz v tabulce zakaznik)
+* vstupním parametrem je jméno zákazníka (jmenoz v tabulce zakaznik)
 * funkce vrátí sumu počtu míst (pocet_mist v tabulce lod) ze všech rezervací, které zákazník má v tabulce rezervace
 
 === výjimky
@@ -23,7 +23,7 @@
 
 * otestujte na těchto vstupních hodnotách:
 * **Gerald** (rezervoal si 2x stejnou loď), očekávaný výsledek je 290
-* **Odyseus** (nerezervoval si nic), očekávaný výsledek je 0
+* **Odysseus** (nerezervoval si nic), očekávaný výsledek je 0
 * **Yoda** (není registrovaný zákazník), očekávaný výsledke je ORA-20001
 
 == úkol 2 - trigger zkontroluj_rezervaci
