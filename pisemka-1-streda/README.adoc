@@ -22,7 +22,7 @@
 === testování
 
 * otestujte na těchto vstupních hodnotách:
-* **Lubber** (má na kontě 2 pokrytí s loděmi 1 a 4), očekávaný výsledek je 120 (100+20)
+* **Lubber** (má na kontě 2 pokrytí s loděmi 1 a 2), očekávaný výsledek je 150 (100+50)
 * **Dustin** (nepokryl žádný spoj), očekávaný výsledek je 0
 * **Yoda** (není registrovaný námořník), očekávaný výsledke je ORA-20001
 
