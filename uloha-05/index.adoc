@@ -1,0 +1,29 @@
+:toc:
+:sectnums:
+:toclevel: 2
+
+= úloha 05  - PostgreSQL - PL/PgSQL
+
+== Cíle
+
+* když už umíte PL/SQL v Oracle, zkuste z něj udělat PLPg/SQL v PostgreSQL
+
+== Zadání a pokyny
+
+* zvolte si úlohu 1, 2 nebo 3 ze svých domácích úloh
+* převeďte celé řešení z Oracle (PL/SQL) do PostgreSQL PL/PgSQL
+
+== Očekávané výsledky
+
+* dle zvoleného typu úlohy stejné jako pro Oracle
+
+== Bodování
+
+* až 12 bodů
+*  příklad zpracujte jako kompletní projekt
+** tím myslím, abyste v zadání nepsali něco jako viz: "url domácího úkolu 2" nebo něco podobného
+** hodnotící kritéria jsou přítomnost a kvalita
+*** dokumentace
+*** realizace
+*** výstupy
+
